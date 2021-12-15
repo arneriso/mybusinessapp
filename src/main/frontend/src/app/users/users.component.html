@@ -1,0 +1,44 @@
+<form #userForm="ngForm" (ngSubmit)="userForm.form.valid && sectorChosen() && agreedToTerms() && saveUser()">
+  Please enter your name and pick the Sectors you are currently involved in.
+  <br>
+  <br>
+  <div *ngIf="businessUser">
+    <label class="top-label" for="name">Name:</label>
+    <input #name="ngModel" type="text" id="name" [(ngModel)]="businessUser!.userName" name="name" required>
+    <div *ngIf="userForm.submitted && name.invalid">Name is required</div>
+  </div>
+  <br>
+  <br>
+  <label class="top-label" for="sectors">Sectors:</label>
+  <select multiple size="20" id="sectors"
+          (change)="onChange($event.target)"
+  >
+    <ng-container
+      *ngTemplateOutlet="recursiveListTmpl; context:{ sectors: sectors, selectedSectors: businessUser?.sectorIds, level: 0 }"
+    ></ng-container>
+  </select>
+  <div *ngIf="userForm.submitted && !sectorChosen()">You must choose at least one sector</div>
+  <br>
+  <br>
+  <div *ngIf="businessUser">
+    <input type="checkbox" id="agree-to-terms" name="agree-to-terms" [(ngModel)]="businessUser!.agreementToTerms">
+    <label for="agree-to-terms">Agree to terms</label>
+    <div *ngIf="userForm.submitted && !businessUser!.agreementToTerms">You must agree to terms</div>
+  </div>
+  <br>
+  <br>
+  <input type="submit" value="Save">
+</form>
+
+<ng-template #recursiveListTmpl let-sectors="sectors" let-selectedSectors="selectedSectors" let-level="level">
+  <ng-container *ngFor="let sector of sectors">
+  <option
+    value="{{ sector.id }}" [selected]="selectedSectors != null && selectedSectors.indexOf(sector.id) >= 0"
+  >
+    {{ "---".repeat(level) + sector.name }}
+  </option>
+  <ng-container
+    *ngTemplateOutlet="recursiveListTmpl; context:{ sectors: sector.subSectors, selectedSectors: selectedSectors, level: level+1}"
+  ></ng-container>
+  </ng-container>
+</ng-template>

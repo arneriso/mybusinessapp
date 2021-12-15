@@ -1,0 +1,35 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.1'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'com.arneriso'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+	implementation 'com.google.code.gson:gson:2.8.6'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
+
+task buildFrontend(type: Exec) {
+	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+		commandLine 'cmd', '/c', 'cd src/main/frontend && npm run-script build && xcopy dist\\frontend\\* ..\\resources\\static\\ /Y /E '
+	} else {
+		commandLine 'sh', '-c', 'cd src/main/frontend && npm run-script build && cp -r build/* ../resources/static/'
+	}
+}
+
+build.dependsOn buildFrontend
+bootJar.dependsOn buildFrontend
