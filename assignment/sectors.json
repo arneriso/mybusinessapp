@@ -1,0 +1,354 @@
+{
+	"_id": "sectors_v1",
+	"value": [
+		{
+			"_id": "1",
+			"name": "Manufacturing",
+			"subSectors": [
+				{
+					"_id": "19",
+					"name": "Construction materials"
+				},
+				{
+					"_id": "18",
+					"name": "Electronics and Optics"
+				},
+				{
+					"_id": "6",
+					"name": "Food and Beverage",
+					"subSectors": [
+						{
+							"_id": "342",
+							"name": "Bakery & confectionery products"
+						},
+						{
+							"_id": "43",
+							"name": "Beverages"
+						},
+						{
+							"_id": "42",
+							"name": "Fish & fish products"
+						},
+						{
+							"_id": "40",
+							"name": "Meat & meat products"
+						},
+						{
+							"_id": "39",
+							"name": "Milk & dairy products"
+						},
+						{
+							"_id": "437",
+							"name": "Other"
+						},
+						{
+							"_id": "378",
+							"name": "Sweets & snack food"
+						}
+					]
+				},
+				{
+					"_id": "13",
+					"name": "Furniture",
+					"subSectors": [
+						{
+							"_id": "389",
+							"name": "Bathroom/sauna"
+						},
+						{
+							"_id": "385",
+							"name": "Bedroom"
+						},
+						{
+							"_id": "390",
+							"name": "Children's room"
+						},
+						{
+							"_id": "98",
+							"name": "Kitchen"
+						},
+						{
+							"_id": "101",
+							"name": "Living room"
+						},
+						{
+							"_id": "392",
+							"name": "Office"
+						},
+						{
+							"_id": "394",
+							"name": "Other (Furniture)"
+						},
+						{
+							"_id": "341",
+							"name": "Outdoor"
+						},
+						{
+							"_id": "99",
+							"name": "Project furniture"
+						}
+					]
+				},
+				{
+					"_id": "12",
+					"name": "Machinery",
+					"subSectors": [
+						{
+							"_id": "94",
+							"name": "Machinery components"
+						},
+						{
+							"_id": "91",
+							"name": "Machinery equipment/tools"
+						},
+						{
+							"_id": "224",
+							"name": "Manufacture of machinery"
+						},
+						{
+							"_id": "97",
+							"name": "Maritime",
+							"subSectors": [
+								{
+									"_id": "271",
+									"name": "Aluminium and steel workboats"
+								},
+								{
+									"_id": "269",
+									"name": "Boat/Yacht building"
+								},
+								{
+									"_id": "230",
+									"name": "Ship repair and conversion"
+								}
+							]
+						},
+						{
+							"_id": "93",
+							"name": "Metal structures"
+						},
+						{
+							"_id": "508",
+							"name": "Other"
+						},
+						{
+							"_id": "227",
+							"name": "Repair and maintenance service"
+						}
+					]
+				},
+				{
+					"_id": "11",
+					"name": "Metalworking",
+					"subSectors": [
+						{
+							"_id": "67",
+							"name": "Construction of metal structures"
+						},
+						{
+							"_id": "263",
+							"name": "Houses and buildings"
+						},
+						{
+							"_id": "267",
+							"name": "Metal products"
+						},
+						{
+							"_id": "542",
+							"name": "Metal works",
+							"subSectors": [
+								{
+									"_id": "75",
+									"name": "CNC-machining"
+								},
+								{
+									"_id": "62",
+									"name": "Forgings, Fasteners"
+								},
+								{
+									"_id": "69",
+									"name": "Gas, Plasma, Laser cutting"
+								},
+								{
+									"_id": "66",
+									"name": "MIG, TIG, Aluminum welding"
+								}
+							]
+						}
+					]
+				},
+				{
+					"_id": "9",
+					"name": "Plastic and Rubber",
+					"subSectors": [
+						{
+							"_id": "54",
+							"name": "Packaging"
+						},
+						{
+							"_id": "556",
+							"name": "Plastic goods"
+						},
+						{
+							"_id": "559",
+							"name": "Plastic processing technology",
+							"subSectors": [
+								{
+									"_id": "55",
+									"name": "Blowing"
+								},
+								{
+									"_id": "57",
+									"name": "Moulding"
+								},
+								{
+									"_id": "53",
+									"name": "Plastics welding and processing"
+								}
+							]
+						},
+						{
+							"_id": "560",
+							"name": "Plastic profiles"
+						}
+					]
+				},
+				{
+					"_id": "5",
+					"name": "Printing",
+					"subSectors": [
+						{
+							"_id": "148",
+							"name": "Advertising"
+						},
+						{
+							"_id": "150",
+							"name": "Book/Periodicals printing"
+						},
+						{
+							"_id": "145",
+							"name": "Labelling and packaging printing"
+						}
+					]
+				},
+				{
+					"_id": "7",
+					"name": "Textile and Clothing",
+					"subSectors": [
+						{
+							"_id": "44",
+							"name": "Clothing"
+						},
+						{
+							"_id": "45",
+							"name": "Textile"
+						}
+					]
+				},
+				{
+					"_id": "8",
+					"name": "Wood",
+					"subSectors": [
+						{
+							"_id": "337",
+							"name": "Other (Wood)"
+						},
+						{
+							"_id": "51",
+							"name": "Wooden building materials"
+						},
+						{
+							"_id": "47",
+							"name": "Wooden houses"
+						}
+					]
+				}
+			]
+		},
+		{
+			"_id": "3",
+			"name": "Other",
+			"subSectors": [
+				{
+					"_id": "37",
+					"name": "Creative industries"
+				},
+				{
+					"_id": "29",
+					"name": "Energy technology"
+				},
+				{
+					"_id": "33",
+					"name": "Environment"
+				}
+			]
+		},
+		{
+			"_id": "2",
+			"name": "Service",
+			"subSectors": [
+				{
+					"_id": "25",
+					"name": "Business services"
+				},
+				{
+					"_id": "35",
+					"name": "Engineering"
+				},
+				{
+					"_id": "28",
+					"name": "Information Technology and Telecommunications",
+					"subSectors": [
+						{
+							"_id": "581",
+							"name": "Data processing, Web portals, E-marketing"
+						},
+						{
+							"_id": "576",
+							"name": "Programming, Consultancy"
+						},
+						{
+							"_id": "121",
+							"name": "Software, Hardware"
+						},
+						{
+							"_id": "122",
+							"name": "Telecommunications"
+						}
+					]
+				},
+				{
+					"_id": "22",
+					"name": "Tourism"
+				},
+				{
+					"_id": "141",
+					"name": "Translation services"
+				},
+				{
+					"_id": "21",
+					"name": "Transport and Logistics",
+					"subSectors": [
+						{
+							"_id": "111",
+							"name": "Air"
+						},
+						{
+							"_id": "114",
+							"name": "Rail"
+						},
+						{
+							"_id": "112",
+							"name": "Road"
+						},
+						{
+							"_id": "113",
+							"name": "Water"
+						}
+					]
+				}
+			]
+		}
+	],
+	"_class": "com.arneriso.mybusinessapp.domain.Sectors"
+}

@@ -1,0 +1,11 @@
+{
+	"_id": "a66cfc86-b9a3-450a-8429-c1dc840a06ed",
+	"userName": "Testuser",
+	"sectorIds": [
+		"40",
+		"378",
+		"390"
+	],
+	"agreementToTerms": true,
+	"_class": "com.arneriso.mybusinessapp.domain.BusinessUser"
+}
